@@ -1,11 +1,11 @@
-package main
+package numbers
 
 import (
 	"math"
 	"fmt"
 )
 
-func main() {
+func piELimit() {
 	var function, limit, printer string
 	fmt.Println("Enter a number: ")
 	fmt.Scan(&limit)
