@@ -1,5 +1,5 @@
-package main
+package numbers
 
 func main() {
-	getPrimeFactor()
+	GetPrimeFactor()
 }
