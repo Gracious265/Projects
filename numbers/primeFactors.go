@@ -15,11 +15,11 @@ func contains(num int, list []int) bool {
 }
 
 // GetPrimeFactor : Get prime factors of a number
-func GetPrimeFactor() {
-	var number int
+func GetPrimeFactor(number int) []int{
 	var factors []int
 	fmt.Println("Enter a number to find it's prime factors: ")
 	fmt.Scan(&number)
+	fmt.Printf("Prime factors of %d are: \n", number)
 	for number%2 == 0 {
 		if !contains(2, factors) {
 			factors = append(factors, 2)
@@ -36,7 +36,7 @@ func GetPrimeFactor() {
 		i += 2
 	}
 	if !contains(number, factors) && number > 2 {
-		factors = append(factors, 2)
+		factors = append(factors, number)
 	}
-	fmt.Println(factors)
+	return factors
 }
