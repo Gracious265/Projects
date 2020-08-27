@@ -15,7 +15,8 @@ func contains(num int, list []int) bool {
 }
 
 // GetPrimeFactor : Get prime factors of a number
-func GetPrimeFactor(number int) []int {
+func GetPrimeFactor() []int {
+	var number int
 	var factors []int
 	fmt.Println("Enter a number to find it's prime factors: ")
 	fmt.Scan(&number)
