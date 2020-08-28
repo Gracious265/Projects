@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-// PrimeNumbers : Prints prime numbers until 1000 until user stops.
+// PrimeNumbers : Have the program find prime numbers until the user chooses to stop asking for the next one.
 func PrimeNumbers() {
 	var i, j, counter, limit int
 	var answer string

@@ -5,7 +5,8 @@ import (
 	"math"
 )
 
-func piELimit() {
+// GetPiELimit : Enter a number and have the program generate PI or E up to that many decimal places. Keep a limit to how far the program will go.
+func GetPiELimit() {
 	var function, limit, printer string
 	fmt.Println("Enter a number: ")
 	fmt.Scan(&limit)

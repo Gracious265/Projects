@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	numbers.PrimeNumbers()
+	numbers.CalculateMortgage()
 }

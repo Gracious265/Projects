@@ -14,7 +14,7 @@ func contains(num int, list []int) bool {
 	return false
 }
 
-// GetPrimeFactor : Get prime factors of a number
+// GetPrimeFactor : Have the user enter a number and find all Prime Factors (if there are any) and display them.
 func GetPrimeFactor() []int {
 	var number int
 	var factors []int

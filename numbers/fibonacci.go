@@ -4,7 +4,8 @@ import (
 	"fmt"
 )
 
-func fibonacci() {
+// GetFibonacci : Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
+func GetFibonacci() {
 	var limit int
 	fmt.Println("Enter the number: ")
 	fmt.Scan(&limit)
