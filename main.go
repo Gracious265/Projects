@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/valaparthvi/Projects/numbers"
+	"github.com/valaparthvi/Projects/number"
 )
 
 func main() {
-	numbers.CalculateMortgage()
+	number.ReturnChange()
 }
