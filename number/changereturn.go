@@ -7,7 +7,7 @@ import (
 // ReturnChange : The user enters a cost and then the amount of money given. The program will figure out the change and the number of quarters, dimes, nickels, pennies needed for the change.
 func ReturnChange() {
 	var billingAmt, givenAmt, returnAmt int
-	notesMap:= make(map[string]int)
+	notesMap := make(map[string]int)
 	fmt.Print("Enter the billing amount: ")
 	fmt.Scan(&billingAmt)
 	fmt.Print("Enter the given amount: ")
@@ -17,7 +17,7 @@ func ReturnChange() {
 
 	if returnAmt < 0 {
 		fmt.Errorf("paid less than the billing amount")
-	} else{
+	} else {
 		fmt.Printf("Return amount: %d \n", returnAmt)
 	}
 
@@ -61,8 +61,8 @@ func ReturnChange() {
 	}
 	notesMap["1"] = returnAmt
 	for key, value := range notesMap {
-		if value > 0{
-		fmt.Printf("%s rupee note/coin: %d \n", key, value)
+		if value > 0 {
+			fmt.Printf("%s rupee note/coin: %d \n", key, value)
 		}
 	}
 }
