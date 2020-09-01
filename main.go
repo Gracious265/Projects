@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	number.UnitConverter()
+	number.AlarmClock()
 }
