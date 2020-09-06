@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	number.DistanceBetweenTwoCities()
+	number.CreditCardValidator()
 }
