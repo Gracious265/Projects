@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	number.TaxCalculator()
+	number.FactorialFinder()
 }
