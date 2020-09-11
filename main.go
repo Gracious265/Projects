@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	number.FactorialFinder()
+	number.ComplexNumbersCalculator()
 }

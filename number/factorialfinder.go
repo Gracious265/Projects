@@ -13,7 +13,7 @@ func getFactorialRecursive(number int) int {
 
 func getFactorialLooping(number int) int {
 	var factorial int = 1
-	for ;number >1; number-- {
+	for ; number > 1; number-- {
 		factorial *= number
 	}
 	return factorial
