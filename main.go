@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	number.ComplexNumbersCalculator()
+	number.HappyNumbers()
 }
