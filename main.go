@@ -1,9 +1,10 @@
 package main
 
 import (
+	"fmt"
 	"github.com/valaparthvi/Projects/number"
 )
 
 func main() {
-	number.HappyNumbers()
+	fmt.Println(number.SpellNumbers())
 }

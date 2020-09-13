@@ -14,7 +14,8 @@ func isHappyNumber(number int) bool {
 	)
 	strnum = strconv.Itoa(number)
 	for _, num := range strnum {
-		sum += int(num) * int(num)
+		intNum := int(num - '0')
+		sum += intNum * intNum
 	}
 	if len(strconv.Itoa(sum)) > 1 {
 		return isHappyNumber(sum)
@@ -35,17 +36,21 @@ func isHappyNumber(number int) bool {
 // Those numbers for which this process ends in 1 are happy numbers, while those that do not end in 1 are unhappy numbers.
 // Display an example of your output here. Find first 8 happy numbers.
 func HappyNumbers() {
-	var happyNumbers = [8]int{1, 10}
 	var (
 		isHappy bool
+		limit   int
 	)
-	index := 2
-	for number := 11; index <= 7; number++ {
+
+	fmt.Print("Enter the limit: ")
+	fmt.Scan(&limit)
+
+	fmt.Print("Happy numbers are:\n1 10 ")
+	count := 3
+	for number := 11; count <= limit; number++ {
 		isHappy = isHappyNumber(number)
 		if isHappy {
-			happyNumbers[index] = number
+			fmt.Printf("%d ", number)
+			count++
 		}
-		index++
 	}
-	fmt.Println("Happy numbers are: ", happyNumbers)
 }
