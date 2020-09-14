@@ -34,13 +34,13 @@ const (
 // You can use a preexisting implementation or roll your own, but you should support inputs up to at least one million
 // (or the maximum value of your language's default bounded integer type, if that's less).
 // Optional: Support for inputs other than positive integers (like zero, negative integers, and floating-point numbers).
-func SpellNumbers() string{
+func SpellNumbers() string {
 	var (
 		number        int
 		numeralString string
 		ling          string
 		length        int
-		digit int
+		digit         int
 	)
 	fmt.Print("Enter a number: ")
 	fmt.Scan(&number)
@@ -50,7 +50,7 @@ func SpellNumbers() string{
 	if length == 4 {
 		ling = spells[digit].unit + " " + thou + " "
 		numeralString = numeralString[1:]
-		if numeralString == "000"{
+		if numeralString == "000" {
 			return ling
 		}
 		digit = int(numeralString[0] - '0')
