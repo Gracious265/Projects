@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/valaparthvi/Projects/number"
+	"github.com/valaparthvi/Projects/text"
 )
 
 func main() {
-	number.CoinSimulator()
+	text.VowelCounter()
 }
