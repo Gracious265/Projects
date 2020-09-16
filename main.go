@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	text.VowelCounter()
+	text.PigLatin()
 }
