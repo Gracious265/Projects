@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/valaparthvi/Projects/text"
+	"github.com/valaparthvi/Projects/number"
 )
 
 func main() {
-	text.PigLatin()
+	number.LimitCalculator()
 }
