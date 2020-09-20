@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	text.RegexQueryTool()
+	text.GoTextEditor()
 }
